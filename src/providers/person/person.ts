@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
-
 import { CooperProvider } from '../cooper/cooper';
 
 @Injectable()
@@ -11,7 +10,7 @@ export class PersonProvider {
 
 
   constructor(private cooper: CooperProvider) {}
-  
+
   doAssessment(distance: number): void {
     this.assessmentMessage = this.cooper.assess(this, distance);
   }
