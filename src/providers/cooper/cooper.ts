@@ -3,9 +3,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class CooperProvider {
-  constructor() {
-    console.log('Hello CooperProvider Provider');
-  }
+  constructor() { }
 
   private ratings: any = [
     'Excellent',
