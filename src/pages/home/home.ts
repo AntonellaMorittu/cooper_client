@@ -4,11 +4,14 @@ import { PersonProvider } from '../../providers/person/person';
 import { PerformanceDataProvider } from '../../providers/performance-data/performance-data';
 import { ResultsPage } from '../results/results';
 import { ModalController } from 'ionic-angular';
+import { ChartsModule } from 'ng2-charts';
+
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
 export class HomePage {
   distance: number = 1000;
 
@@ -23,7 +26,7 @@ export class HomePage {
 
   calculate() {
     this.person.doAssessment(this.distance);
-  }
+    }
 
   showResults() {
     this.modalCtrl.create(ResultsPage).present();
