@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import { Angular2TokenService } from 'angular2-token';
+import { Angular2TokenService, A2tUiModule } from 'angular2-token';
 import { ChartsModule } from 'ng2-charts';
 
 import { MyApp } from './app.component';
