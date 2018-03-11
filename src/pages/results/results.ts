@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, ViewController } from 'ionic-angular';
 import { PerformanceDataProvider } from '../../providers/performance-data/performance-data'
 import { ChartsModule } from 'ng2-charts';
 
@@ -19,6 +19,7 @@ export class ResultsPage {
 
   constructor(
     private performanceData: PerformanceDataProvider,
+    private viewCtrl: ViewController,
     public navCtrl: NavController,
     public navParams: NavParams) {}
 
