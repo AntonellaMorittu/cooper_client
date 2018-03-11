@@ -30,7 +30,6 @@ export class MyApp {
 
     this.initializeApp();
 
-    // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Results', component: ResultsPage },
@@ -46,6 +45,15 @@ export class MyApp {
 
   openPage(page) {
     this.nav.setRoot(page.component);
+  }
+
+  showAlert() {
+  let alert = this.alertCtrl.create({
+    title: 'Success',
+    subTitle: 'Successful action',
+    buttons: ['Ok']
+  });
+    alert.present();
   }
 
   registerAccountPopUp(){
@@ -79,6 +87,7 @@ export class MyApp {
           text: 'Signup',
           handler: data => {
             this.register(data);
+            this.login(data);
           }
         }
       ]
